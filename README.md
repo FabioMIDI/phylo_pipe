@@ -63,10 +63,18 @@ Once you're inside the folder, from the terminal:
 
 see the description below:
 
-- -i: MANDATORY, folder containing one protein multifasta for each organism, you have to specifies the folder's path
-- -t: MANDATORY, number of threads depending of your PC, more is faster
-- -r: OPTIONAL, remove temp folder: if -r is specificed it will remove the temp folder. If it is not present it will keep it.
-- -p: OPTIONAL, if -p True is specified it will run Phi test. If it is not present it will skip this step.
+- -i
+
+Mandatory, folder containing one protein multifasta for each organism, you have to specifies the folder's path
+- -t: 
+
+Mandatory, number of threads depending of your PC, more is faster
+- -r: 
+
+Optional, remove temp folder: if -r is specificed it will remove the temp folder. If it is not present it will keep it.
+- -p: 
+
+Optional, if -p True is specified it will run Phi test. If it is not present it will skip this step.
 
 Examples: 
 - Run the pipeline with 11 threads, does NOT remove the temp folder, perform Phi test
