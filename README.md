@@ -3,12 +3,12 @@
 A pipeline to perform phylogenesis from protein sequences
 
 
-# 0.Operative system
+# 0. Operative system
 
 The pipeline is designed on Ubuntu 14.04 LTS, and was only tested on this Linux distribution.
 
 
-# 1.Description
+# 1. Description
 
 phylo_pipe is a pipeline to perform phylogenesis from protein sequences. 
 
@@ -24,7 +24,7 @@ It combines softwares and scripts in the order below:
 The final output is obtained from orthos2cat.py and is a concatenated Multiple Single Alignment (MSA) combining all not recombinant single copy orthologs gblocked MSAs. This file can be used as input for a phylogenetic software such as FastTree or RaxML. A temp folder includes every output for each software 1-5.
 
 
-# 2.Warnings
+# 2. Warnings
 
 The file name of each protein mutifasta will be the one appearing in the phylogenetic tree; change it accordingly.
 Anyway, the file name must be no longer than 60 characters and it mustn't end with "a" (ex: "Midichloria.faa" it's not fine, it should be converted in Midichlori.faa or something else without "a" as the last character) 
@@ -32,7 +32,7 @@ Anyway, the file name must be no longer than 60 characters and it mustn't end wi
 When performing the pipeline on a reduced number of taxa (~less than 3/4) and/or on taxa with short proteins, Phi may not be able to work; the pipeline will continue skipping this step and printing a WARNING. 
 
 
-# 3.Requirements
+# 3. Requirements
 
 The following softwares must be installed for the pipeline to work: Blast+, MCL
 And the following python modules: python-dev, pandas, numpy, biopython.
@@ -41,7 +41,7 @@ Blast+, MCL: "sudo apt-get install [software name]"
 python-dev, pandas, numpy, biopython: "sudo apt-get install python-[name of module]" (python-dev is a requirement for all other modules, install it first)
 
 
-# 4.How to run
+# 4. How to run
 
 Full manual from the terminal: "python phylo_pipe.py -h"
 
@@ -60,14 +60,14 @@ Examples:
 Run the pipeline with 11 threads, does NOT remove the temp folder, perform Phi test
 "python phylo_pipe.py -i fasta_folder -t 11 -p True"
 
-Run the pipeline with 11 threads, remove the temp folder, perform Phi test
+- Run the pipeline with 11 threads, remove the temp folder, perform Phi test
 "python phylo_pipe.py -i fasta_folder -t 11 -r -p True"
 
-Run the pipeline with 8 threads, remove the temp folder, do not perform Phi test
+- Run the pipeline with 8 threads, remove the temp folder, do not perform Phi test
 "python phylo_pipe.py -i fasta_folder -t 8 -r"
 
 
-# 5.Output
+# 5. Output
 
 output files will be in the multifastas folder (input_folder as described in 4.) and will be the following:
 
@@ -78,7 +78,7 @@ output files will be in the multifastas folder (input_folder as described in 4.)
 The process may require some time, depending of your hardware specifics and number of taxa/number of proteins per taxon. 
 
 
-# 6.Test 
+# 6. Test 
 
 You can test the pipeline with the "test" folder, which contains a trial dataset of multifastas.
 
