@@ -55,6 +55,11 @@ python-dev, pandas, numpy, biopython: "sudo apt-get install python-[name of modu
 
 # 4. How to run
 
+
+
+
+
+
 Full manual from the terminal: "python phylo_pipe.py -h"
 
 The pipeline must be run inside its folder.
@@ -66,13 +71,13 @@ see the description below:
 - -i
 
 Mandatory, folder containing one protein multifasta for each organism, you have to specifies the folder's path
-- -t: 
+- -t
 
 Mandatory, number of threads depending of your PC, more is faster
-- -r: 
+- -r 
 
 Optional, remove temp folder: if -r is specificed it will remove the temp folder. If it is not present it will keep it.
-- -p: 
+- -p
 
 Optional, if -p True is specified it will run Phi test. If it is not present it will skip this step.
 
