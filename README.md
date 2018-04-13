@@ -114,5 +114,6 @@ The process may require some time, depending of your hardware specifics and numb
 
 You can test the pipeline with the "test" folder, which contains a trial dataset of multifastas.
 
-Run the pipeline with "test" folder
+- Run the pipeline with "test" folder
+
 "python phylo_pipe.py -i test -t 11 -p True"
