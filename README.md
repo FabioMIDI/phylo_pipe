@@ -19,19 +19,19 @@ It combines softwares and scripts in the order below:
 Standalone software, find orthologus from protein, more info here: https://github.com/davidemms/OrthoFinder
 - read_ortho_out.py
 
-create p/a matrix, multifastas of single copy orthologs (SCO)
+Create p/a matrix, multifastas of single copy orthologs (SCO)
 - muscle_batchrun.py
 
-aligns single copy orthogroups with Muscle
+Aligns single copy orthogroups with Muscle
 - phi_batchrun.py [optional]
 
-perform test for recombination with Phi; recombining SCO are discarded
+Perform test for recombination with Phi; recombining SCO are discarded
 - gblock_batchrun.py
 
-perform Gblocks on each alignment to remove not informative sites
+Perform Gblocks on each alignment to remove not informative sites
 - orthos2cat.py
 
-concatenate gblocked multialigned SCO into one file
+Concatenate gblocked multialigned SCO into one file
 
 The final output is obtained from orthos2cat.py and is a concatenated Multiple Single Alignment (MSA) combining all not recombinant single copy orthologs gblocked MSAs. This file can be used as input for a phylogenetic software such as FastTree or RaxML. A temp folder includes every output for each software 1-5.
 
