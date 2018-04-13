@@ -74,8 +74,12 @@ Examples:
 
 output files will be in the multifastas folder (input_folder as described in 4.) and will be the following:
 
-- orthos2cat_out; the main output of the pipeline (described in 1.)
-- [OPTIONAL] temp; temporary files folder (if multiple analyses are run; each one will have a temp folder with a progressive number -e.g. temp, temp_1, temp_2 etc. - ) containing the output of all softwares and scripts componing the pipeline.
+- orthos2cat_out
+
+The main output of the pipeline (described in 1.)
+- [OPTIONAL] temp
+
+Temporary files folder (if multiple analyses are run; each one will have a temp folder with a progressive number -e.g. temp, temp_1, temp_2 etc. - ) containing the output of all softwares and scripts componing the pipeline.
 
 
 The process may require some time, depending of your hardware specifics and number of taxa/number of proteins per taxon. 
