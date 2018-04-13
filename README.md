@@ -57,13 +57,16 @@ see the description below:
 - -p: OPTIONAL, if -p True is specified it will run Phi test. If it is not present it will skip this step.
 
 Examples: 
-Run the pipeline with 11 threads, does NOT remove the temp folder, perform Phi test
+- Run the pipeline with 11 threads, does NOT remove the temp folder, perform Phi test
+
 "python phylo_pipe.py -i fasta_folder -t 11 -p True"
 
 - Run the pipeline with 11 threads, remove the temp folder, perform Phi test
+
 "python phylo_pipe.py -i fasta_folder -t 11 -r -p True"
 
 - Run the pipeline with 8 threads, remove the temp folder, do not perform Phi test
+
 "python phylo_pipe.py -i fasta_folder -t 8 -r"
 
 
