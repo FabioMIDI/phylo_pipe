@@ -48,23 +48,30 @@ When performing the pipeline on a reduced number of taxa (~less than 3/4) and/or
 
 The following softwares must be installed for the pipeline to work: Blast+, MCL
 And the following python modules: python-dev, pandas, numpy, biopython.
-How to install from the terminal:
-Blast+, MCL: "sudo apt-get install [software name]" 
-python-dev, pandas, numpy, biopython: "sudo apt-get install python-[name of module]" (python-dev is a requirement for all other modules, install it first)
+
+- How to install from the terminal
+
+Blast+, MCL: 
+
+```sudo apt-get install [software name]```
+
+python-dev, pandas, numpy, biopython: 
+
+```sudo apt-get install python-[name of module]``` 
+
+python-dev is a requirement for all other modules, install it first
 
 
 # 4. How to run
 
+- Full manual from the terminal:
 
-
-
-
-
-Full manual from the terminal: "python phylo_pipe.py -h"
+```python phylo_pipe.py -h```
 
 The pipeline must be run inside its folder.
 Once you're inside the folder, from the terminal: 
-"python phylo_pipe.py -i [input_folder] -t [number_of_threads] {-r} -p [Phi_test]"
+
+```python phylo_pipe.py -i [input_folder] -t [number_of_threads] {-r} -p [Phi_test]```
 
 see the description below:
 
@@ -84,15 +91,15 @@ Optional, if -p True is specified it will run Phi test. If it is not present it 
 Examples: 
 - Run the pipeline with 11 threads, does NOT remove the temp folder, perform Phi test
 
-"python phylo_pipe.py -i fasta_folder -t 11 -p True"
+```python phylo_pipe.py -i fasta_folder -t 11 -p True```
 
 - Run the pipeline with 11 threads, remove the temp folder, perform Phi test
 
-"python phylo_pipe.py -i fasta_folder -t 11 -r -p True"
+```python phylo_pipe.py -i fasta_folder -t 11 -r -p True```
 
 - Run the pipeline with 8 threads, remove the temp folder, do not perform Phi test
 
-"python phylo_pipe.py -i fasta_folder -t 8 -r"
+```python phylo_pipe.py -i fasta_folder -t 8 -r```
 
 
 # 5. Output
@@ -116,4 +123,4 @@ You can test the pipeline with the "test" folder, which contains a trial dataset
 
 - Run the pipeline with "test" folder
 
-"python phylo_pipe.py -i test -t 11 -p True"
+```python phylo_pipe.py -i test -t 11 -p True```
